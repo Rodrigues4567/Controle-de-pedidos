@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'padrao';
+    src: url(fonts/Prompt/Prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'font-titulo';
+    src: url(fonts/Prosto_One/ProstoOne-Regular.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'padrao', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #861111;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-family: 'font-titulo', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #861111;
+    left: 0px;
+    bottom: 0px;
+}
+
+.radio-buttons-container {
+    margin-bottom: 1rem;
+}
+
+.selects-container {
+    margin-bottom: 1rem;
+}
+
+.detalhes-container {
+    margin-bottom: 1.8rem;
+}
+
+#detalhestxt {
+    width: 95%;
+    padding: 2px 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 18px;
+    font-size: 1.1rem;
+    border: none;
+    margin-bottom: 1.5rem;
+    background-color: #861111;
+    color: #dddddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.resposta-titulo {
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}

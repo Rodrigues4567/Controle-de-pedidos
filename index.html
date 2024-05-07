@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>Controle de pedidos</h1>
+
+            <form action="#">
+                <div class="radio-buttons-container">
+                    <span>Pedidos:</span>
+                    <input type="radio" name="radiob" id="radio-pizza" checked>
+                    <label for="radio-pizza">Pizza</label>
+
+                    <input type="radio" name="radiob" id="radio-bebida">
+                    <label for="radio-bebida">Bebida</label>
+                </div>
+
+                <div class="selects-container">
+                    <p>Item do pedido:</p>
+                    <select id="select-pizza">
+                        <option value="media">Pizza média</option>
+                        <option value="grande">Pizza grande</option>
+                        <option value="familia">Pizza familia</option>
+                    </select>
+
+                    <select id="select-bebida" class="hide">
+                        <option value="refri">Refrigerante</option>
+                        <option value="suco">Suco</option>
+                        <option value="Água">Água mineral</option>
+                    </select>
+                </div>
+
+                <div class="detalhes-container">
+                    <p>Detalhes do item:</p>
+                    <input type="text" name="" id="detalhestxt">
+                </div>
+
+                <div class="button-container">
+                    <input class="button" type="submit" value="Adicionar">
+                </div>
+            </form>
+            <p class="resposta-titulo"></p>
+            <p class="resposta-desc"></p>
+        </section>
+    </main>
+</body>
+</html>
